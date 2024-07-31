@@ -1,3 +1,3 @@
 # paginawebcielo.github.io
-<button type="button" onclick="ok.performClick();">OK</button>
+<button type="button" onclick="ok.qualquerNome();">OK</button>
 teste 2

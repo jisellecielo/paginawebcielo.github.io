@@ -1,3 +1,3 @@
 # paginawebcielo.github.io
-<button type="button" id="botaozao" onclick="abrirNovoFluxo();">OK</button>
-teste 4
+<button type="button" onclick="botaozao.abrirNovoFluxo();">OK</button>
+teste 5

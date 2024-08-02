@@ -1,3 +1,3 @@
 # paginawebcielo.github.io
-<button type="button" onclick="botao.openNativeScreen();">Fluxo 1</button><br/>
-teste 8
+<button type="button" onclick="botao.openNativeScreen('testeee');">Abrir tela nativa</button><br/>
+teste 9

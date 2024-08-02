@@ -1,3 +1,3 @@
 # paginawebcielo.github.io
-<button type="button" onclick="botao.openNativeScreen('passagem de parametros');">Abrir tela nativa</button><br/>
-teste 11
+<button type="button" onclick="botao.openNativeScreen();">Abrir tela nativa</button><br/>
+teste 12

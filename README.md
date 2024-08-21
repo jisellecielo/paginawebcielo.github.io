@@ -1,4 +1,44 @@
 # paginawebcielo.github.io
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin: 10px 0;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .mensagem-erro, .mensagem-sucesso {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .mensagem-erro {
+      color: red;
+    }
+    .mensagem-sucesso {
+      color: green;
+    }
+    .example {
+      font-size: 0.8em;
+      color: #888;
+    }
+</style>
 <script>
   var obj = {pDouble: 1.99, pString: 'parâmetros', pInt: 2, pBoolean: true}
   var str = JSON.stringify(obj);
@@ -63,7 +103,7 @@
   <input type="text" id="paymentTypeCode"><br>
   <label for="grossAmount">Gross Amount:</label>
   <input type="text" id="grossAmount"><br>
-  <label for="merchantId">Merchant ID:</label>
+  <label for="saleMerchant">Sale Merchant:</label>
   <input type="text" id="saleMerchant"><br>
   <button onclick="enviarDados()">Enviar</button><p class="mensagem-erro" id="mensagemErro"></p><p class="mensagem-sucesso" id="mensagemSucesso"></p>
 </body>

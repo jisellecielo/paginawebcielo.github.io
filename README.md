@@ -55,7 +55,7 @@
       var mensagemErro = document.getElementById('mensagemErro');
       var mensagemSucesso = document.getElementById('mensagemSucesso');
 
-      if (cardBrandCode && authorizationCode && nsu && truncatedCardNumber && authorizationDate && paymentTypeCode && grossAmount && merchantId) {
+      if (cardBrandCode && authorizationCode && nsu && truncatedCardNumber && authorizationDate && paymentTypeCode && grossAmount && saleMerchant) {
         // Todos os campos preenchidos, pode prosseguir com o envio dos dados
         mensagemSucesso.textContent = 'Dados enviados com sucesso!';
         mensagemErro.textContent = '';

@@ -89,21 +89,21 @@
 
 <body>
   <h1>Dados da Transação</h1>
-  <label for="cardBrandCode">Card Brand Code:</label>
+  <label for="cardBrandCode">Card Brand Code: <span class="example"> (Exemplo: 3)</span></label>
   <input type="text" id="cardBrandCode"><br>
-  <label for="authorizationCode">Authorization Code:</label>
+  <label for="authorizationCode">Authorization Code: <span class="example"> (Exemplo: 811780)</span></label>
   <input type="text" id="authorizationCode"><br>
-  <label for="nsu">NSU:</label>
+  <label for="nsu">NSU: <span class="example"> (Exemplo: 167700)</span></label>
   <input type="text" id="nsu"><br>
-  <label for="truncatedCardNumber">Truncated Card Number:</label>
+  <label for="truncatedCardNumber">Truncated Card Number: <span class="example"> (Exemplo: 3005)</span></label>
   <input type="text" id="truncatedCardNumber"><br>
-  <label for="authorizationDate">Authorization Date:</label>
+  <label for="authorizationDate">Authorization Date: <span class="example"> (Exemplo: 2024-08-09)</span></label>
   <input type="text" id="authorizationDate"><br>
-  <label for="paymentTypeCode">Payment Type Code:</label>
+  <label for="paymentTypeCode">Payment Type Code: <span class="example"> (Exemplo: 52)</span></label>
   <input type="text" id="paymentTypeCode"><br>
-  <label for="grossAmount">Gross Amount:</label>
+  <label for="grossAmount">Gross Amount: <span class="example"> (Exemplo: 55.0)</span></label>
   <input type="text" id="grossAmount"><br>
-  <label for="saleMerchant">Sale Merchant:</label>
+  <label for="saleMerchant">Sale Merchant: <span class="example"> (Exemplo: 2121212112)</span></label>
   <input type="text" id="saleMerchant"><br>
   <button onclick="enviarDados()">Enviar</button><p class="mensagem-erro" id="mensagemErro"></p><p class="mensagem-sucesso" id="mensagemSucesso"></p>
 </body>

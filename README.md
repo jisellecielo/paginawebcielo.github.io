@@ -44,7 +44,7 @@
   //var str = JSON.stringify(obj);
 
   function enviarDados() {
-      var cardBrandCode = document.getElementById('cardBrandCode').value;
+      /*var cardBrandCode = document.getElementById('cardBrandCode').value;
       var authorizationCode = document.getElementById('authorizationCode').value;
       var nsu = document.getElementById('nsu').value;
       var truncatedCardNumber = document.getElementById('truncatedCardNumber').value;
@@ -70,25 +70,33 @@
           paymentTypeCode: paymentTypeCode,
           grossAmount: grossAmount,
           saleMerchant: saleMerchant
+        };*/
+
+        var params2 = {
+          finalityId: null,
+          startNewShare: true,
+          flowId: null,
+          URLOrigin: "https://jisellecielo.github.io/retorno.github.io/?origin=web"
         };
 
         // Converter o objeto em uma string JSON
-        var params = JSON.stringify(params);
+        //var params = JSON.stringify(params);
+        var GENERIC_FLOW_PARAMS = JSON.stringify(params2);
 
         // Chamar a função navigateToNativeFlow
-        native.navigateToNativeFlow("APP_CANCEL_SALE", params, false);
-      } else {
+        native.navigateToNativeFlow("APP_ANDROID_OPENFINANCE", GENERIC_FLOW_PARAMS, true);
+      /*} else {
         // Caso algum campo não esteja preenchido, exibe uma mensagem de erro
         mensagemErro.textContent = 'Por favor, preencha todos os campos!';
         mensagemSucesso.textContent = '';
-      }
+      }*/
     }
   
 </script>
 
 
 <body>
-  <h1>Dados da Transação</h1>
+ <!-- <h1>Dados da Transação</h1>
   <label for="cardBrandCode">Card Brand Code: <span class="example"> (Exemplo: 3)</span></label>
   <input type="text" id="cardBrandCode"><br>
   <label for="authorizationCode">Authorization Code: <span class="example"> (Exemplo: 811780)</span></label>
@@ -104,7 +112,7 @@
   <label for="grossAmount">Gross Amount: <span class="example"> (Exemplo: 55.0)</span></label>
   <input type="text" id="grossAmount"><br>
   <label for="saleMerchant">Sale Merchant: <span class="example"> (Exemplo: 2121212112)</span></label>
-  <input type="text" id="saleMerchant"><br>
+  <input type="text" id="saleMerchant"><br>-->
   <button onclick="enviarDados()">Enviar</button><p class="mensagem-erro" id="mensagemErro"></p><p class="mensagem-sucesso" id="mensagemSucesso"></p>
 </body>
 <!--<button style="background-color: yellow;" type="button" onclick="native.navigateToNativeFlow('APP_ANDROID_PIX', null, false);">Abrir tela nativa sem parâmetros</button><br/>

@@ -113,7 +113,7 @@
   <input type="text" id="grossAmount"><br>
   <label for="saleMerchant">Sale Merchant: <span class="example"> (Exemplo: 2121212112)</span></label>
   <input type="text" id="saleMerchant"><br>-->
-  <button onclick="enviarDados()">Enviar</button><p class="mensagem-erro" id="mensagemErro"></p><p class="mensagem-sucesso" id="mensagemSucesso"></p>
+  <button onclick="enviarDados()">Ir para o fluxo do Open Finance</button><p class="mensagem-erro" id="mensagemErro"></p><p class="mensagem-sucesso" id="mensagemSucesso"></p>
 </body>
 <!--<button style="background-color: yellow;" type="button" onclick="native.navigateToNativeFlow('APP_ANDROID_PIX', null, false);">Abrir tela nativa sem parâmetros</button><br/>
 <button style="background-color: lightblue;" type="button" onclick="native.navigateToNativeFlow('APP_ANDROID_PIX', str, true);">Abrir tela nativa com parâmetros</button><br/>-->
